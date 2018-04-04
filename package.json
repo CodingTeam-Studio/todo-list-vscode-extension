@@ -7,10 +7,13 @@
   "engines": {
     "vscode": "^1.21.0"
   },
-  "categories": ["Other"],
+  "categories": [
+    "Other"
+  ],
   "activationEvents": [
     "onCommand:extension.demo01-hello-world",
     "onCommand:extension.demo02-word-counter",
+    "onCommand:extension.demo03-todo-detector",
     "onLanguage:markdown"
   ],
   "main": "./out/extension",
@@ -23,6 +26,10 @@
       {
         "command": "extension.demo02-word-counter",
         "title": "Demo02-word-counter"
+      },
+      {
+        "command": "extension.demo03-todo-detector",
+        "title": "Demo03-todo-detector"
       }
     ]
   },
