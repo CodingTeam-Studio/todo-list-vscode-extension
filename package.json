@@ -1,47 +1,43 @@
 {
-    "name": "todo-list",
-    "displayName": "todo-list",
-    "description": "no",
-    "version": "0.0.1",
-    "publisher": "IIzzaya",
-    "engines": {
-        "vscode": "^1.21.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.sayHello",
-        "onCommand:extension.demo01",
-        "onCommand:extension.demo02-word-counter",
-        "onLanguage:markdown"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.sayHello",
-                "title": "Hello World"
-            },
-            {
-                "command": "extension.demo01",
-                "title": "Demo01"
-            },
-            {
-                "command": "extension.demo02-word-counter",
-                "title": "Demo02-word-counter"
-            }
-        ]
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "eslint": "^4.11.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
-    }
+  "name": "todo-list",
+  "displayName": "todo-list",
+  "description": "No description www",
+  "version": "0.0.1",
+  "publisher": "IIzzaya",
+  "engines": {
+    "vscode": "^1.21.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:extension.demo01-hello-world",
+    "onCommand:extension.demo02-word-counter",
+    "onLanguage:markdown"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.demo01-hello-world",
+        "title": "Demo01-hello-world"
+      },
+      {
+        "command": "extension.demo02-word-counter",
+        "title": "Demo02-word-counter"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.6",
+    "tslint": "^5.8.0",
+    "@types/node": "^7.0.43",
+    "@types/mocha": "^2.2.42"
+  }
 }

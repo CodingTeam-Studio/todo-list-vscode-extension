@@ -14,6 +14,7 @@
 
 * Add `Demo01` command to test `vscode.commands.registerCommand`
 * Achieve the word-count features [https://code.visualstudio.com/docs/extensions/example-word-count](https://code.visualstudio.com/docs/extensions/example-word-count)
+* Transfer file type from javascirpt into typescirpt to get better coding environment
 
 ## 2018/04/03
 
