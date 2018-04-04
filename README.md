@@ -7,6 +7,7 @@
 ## 2018/04/04
 
 * Add `Demo01` command to test `vscode.commands.registerCommand`
+* Achieve the word-count features [https://code.visualstudio.com/docs/extensions/example-word-count](https://code.visualstudio.com/docs/extensions/example-word-count)
 
 ## 2018/04/03
 

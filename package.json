@@ -12,7 +12,9 @@
     ],
     "activationEvents": [
         "onCommand:extension.sayHello",
-        "onCommand:extension.demo01"
+        "onCommand:extension.demo01",
+        "onCommand:extension.demo02-word-counter",
+        "onLanguage:markdown"
     ],
     "main": "./extension",
     "contributes": {
@@ -24,6 +26,10 @@
             {
                 "command": "extension.demo01",
                 "title": "Demo01"
+            },
+            {
+                "command": "extension.demo02-word-counter",
+                "title": "Demo02-word-counter"
             }
         ]
     },
