@@ -23,10 +23,10 @@ export class TodoDetector {
     // 运用正则表达式处理文本内容
     let match = "TODO";
 
-    // match为TODO的话，真实的正则表达式为：/\/\/.*TODO.*/g
+    // match为TODO的话，真实的正则表达式为：\/\/.*TODO.*
     let reg = eval(`/\\/\\/.*${match}.*/g`);
     let comments = docContent.match(reg);
-    
+
     console.log(comments);
     let todos = "";
     if (comments !== null) {
