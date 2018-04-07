@@ -16,7 +16,7 @@
 * Achieve the word-count features [https://code.visualstudio.com/docs/extensions/example-word-count](https://code.visualstudio.com/docs/extensions/example-word-count)
 * Transfer file type from javascirpt into typescirpt to get better coding environment
 * Add `todoDetector` with "regular expression"
-* Use `> Demo03-todo-detector` to detect "TODO" within `// TODO comments`
+* Use `> Demo03-todo-detector` to detect "TODO" within `// TODO comments` or something else
 
 ## 2018/04/03
 
